@@ -31,5 +31,11 @@ module Cookbook
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Using a Postegres specific ENUM TYPE prevents schema.rb from being
+    # useful as neither the ENUM TYPE nor any tables using it can be expressed.
+    # Thus structure.sql is used instead.
+    # See guides.rubyonrails.org/active_record_migrations.html#schema-dumping-and-you
+    config.active_record.schema_format = :sql
   end
 end
