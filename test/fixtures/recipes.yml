@@ -4,8 +4,12 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+pancakes:
+  name: Pancakes
+  instructions: Mix ingredients well. Fry in Pan.
+  default_number_of_servings: 4
+
+grilled_cheese_sandwich:
+  name: Grilled Cheese Sandwich
+  instructions: Put cheese slice between two toasts. Butter outsides of toasts. Put into Sandwich Maker.
+  default_number_of_servings: 2
